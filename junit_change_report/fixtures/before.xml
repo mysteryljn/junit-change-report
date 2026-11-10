@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites><testsuite name="vehicle-ci"><testsuite name="diagnostics">
+  <testcase classname="Session" name="extended_session" time="0.30"/>
+  <testcase classname="Session" name="timeout_recovery" time="0.25"><failure message="old timeout">Response missing</failure></testcase>
+  <testcase classname="DTC" name="read_codes" time="0.40"/>
+  <testcase classname="Legacy" name="retired_service"/>
+</testsuite></testsuite></testsuites>

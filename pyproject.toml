@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "junit-change-report"
+version = "0.1.0"
+description = "Turn JUnit XML runs into regression, recovery and timing change reports."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "mysteryljn"}]
+dependencies = []
+
+[project.scripts]
+junit-change-report = "junit_change_report.cli:main"
+
+[project.urls]
+Repository = "https://github.com/mysteryljn/junit-change-report"
+Issues = "https://github.com/mysteryljn/junit-change-report/issues"
+
+[tool.setuptools.packages.find]
+include = ["junit_change_report*"]
+
+[tool.setuptools.package-data]
+junit_change_report = ["fixtures/*"]

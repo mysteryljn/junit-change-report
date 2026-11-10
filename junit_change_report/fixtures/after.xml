@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites><testsuite name="vehicle-ci"><testsuite name="diagnostics">
+  <testcase classname="Session" name="extended_session" time="0.90"/>
+  <testcase classname="Session" name="timeout_recovery" time="0.20"/>
+  <testcase classname="DTC" name="read_codes" time="0.42"><failure message="unexpected NRC">Expected positive response, got 0x31</failure></testcase>
+  <testcase classname="DTC" name="clear_codes" time="0.02"><skipped message="optional feature"/></testcase>
+  <testcase classname="Transport" name="connection" time="0.01"><error message="connection refused"/></testcase>
+</testsuite></testsuite></testsuites>

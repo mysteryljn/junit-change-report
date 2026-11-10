@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest-integration" errors="0" failures="1" skipped="1" tests="4" time="0.177" timestamp="2026-11-10T14:53:38.699276+08:00" hostname="QD202103290168A"><testcase classname="junit_change_report.fixtures.pytest_cases" name="test_stays_good" time="0.002" /><testcase classname="junit_change_report.fixtures.pytest_cases" name="test_regression" time="0.000" /><testcase classname="junit_change_report.fixtures.pytest_cases" name="test_recovery" time="0.014"><failure message="AssertionError: previous diagnostic failure&#10;assert 'before' == 'after'&#10;  &#10;  - after&#10;  + before">def test_recovery():
+&gt;       assert os.environ["JUNIT_FIXTURE_PHASE"] == "after", "previous diagnostic failure"
+E       AssertionError: previous diagnostic failure
+E       assert 'before' == 'after'
+E         
+E         - after
+E         + before
+
+junit_change_report\fixtures\pytest_cases.py:19: AssertionError</failure></testcase><testcase classname="junit_change_report.fixtures.pytest_cases" name="test_optional_feature" time="0.000"><skipped type="pytest.skip" message="optional feature is disabled">F:\github\junit-change-report\junit_change_report\fixtures\pytest_cases.py:22: optional feature is disabled</skipped></testcase></testsuite></testsuites>
